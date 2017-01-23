@@ -13,13 +13,14 @@ app.factory('PinFactory', function($http){
 
             createNewPin: function(uid, boardid, url, title){
 
-              let newPen = {
+              let newPin = {
                 "uid": uid,
                 "boardid": boardid,
                 "url": url,
                 "title": title
               }
 
-              $http.post('https://somewhat-pinterested.firebaseio.com/pins.json', JSON.stringify(newPen))
+              $http.post('https://somewhat-pinterested.firebaseio.com/pins.json', JSON.stringify(newPin))
           }
+        }
 })
