@@ -18,6 +18,10 @@ app.config(function($routeProvider, $locationProvider){
         controller: 'LoginCtrl',
         templateUrl: 'partials/login.html'
     })
+    .when('/yourStuffs', {
+        controller: 'test',
+        templateUrl: 'partials/user.html'
+    })
     .when('/yourPins', {
         controller: 'UserPinsCtrl',
         templateUrl: 'partials/userPins.html'
