@@ -1,0 +1,23 @@
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+}
+
+.wrapper {
+	width: 90%;
+	height: auto;
+	background-color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*FOR PLACEHOLDER*/
+.center {
+	align-content: center;
+}
+
+.navigation {
+	background-color: #ffad99;
+}
+
+
