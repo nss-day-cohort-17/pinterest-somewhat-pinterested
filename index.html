@@ -6,9 +6,34 @@
     <title>Somewhat Pinterested</title>
   </head>
   <body>
-    <script src="/bower_components/angular/angular.min.js"></script>
-    <script src="/bower_components/angular-route/angular-route.min.js"></script>
-    <script src="/bower_components/materialize/dist/js/materialize.min.js"></script>
-    <script src="/app.js"></script>
+    <!-- Make a Nav -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">National Parks</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/login.html">Login</a></li>
+          <li class="active"><a href="#/register.html">Register</a></li>
+          <li class="active"><a href="#/forests">Forest List</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div ng-app="pinterestApp">
+        <div ng-view></div>
+      </div>
+    </div>
+    <!-- Dependency scripts -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <!-- Main app script -->
+    <script src="app/app.js"></script>
+    <!-- Factory scripts -->
+    <script src="app/factories/ForestFactory.js"></script>
+    <!-- Controller Scripts -->
+    <script src="app/controllers/forestFavoriteControl.js"></script>
   </body>
 </html>
