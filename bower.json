@@ -1,0 +1,22 @@
+{
+  "name": "pinterest-somewhat-pinterested",
+  "homepage": "https://github.com/nss-day-cohort-17/pinterest-somewhat-pinterested",
+  "authors": [
+    "T-Farmer"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.1",
+    "angular": "^1.6.1",
+    "materialize": "^0.97.8"
+  }
+}
