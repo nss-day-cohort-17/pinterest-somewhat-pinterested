@@ -3,41 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>National Parks App</title>
-  <link rel="stylesheet" type="text/css" href="lib/materialize/dist/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="/lib/materialize/dist/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
+<!-- ___________________________________ -->
 
-    <!-- Make a Nav -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">National Parks</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#/login.html">Login</a></li>
-        <li class="active"><a href="#/register.html">Register</a></li>
-        <li class="active"><a href="#/forests">Forest List</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <div class="container">
-    <div ng-app="pinterestApp">
-      <div ng-view></div>
-    </div>
-  </div>
 
+<!-- naviagtion -->
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">Logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <li><a href="sass.html">Home</a></li>
+              <li><a href="badges.html">Boards</a></li>
+              <li><a href="collapsible.html">Pins</a></li>
+            </ul>
+          </div>
+        </nav>
+<!-- end navigation -->
+
+
+
+
+    <div ng-app="pinterestApp"> <!-- angular ng-app (initate) -->
+      <div ng-view> <!-- angular ng-view -->
+      </div> <!-- end angular ng-view -->
+    </div> <!-- end angular ng-app (initiate) -->
+
+
+<!-- _____________________________________ -->
   <!-- Dependency scripts -->
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/angular-route/angular-route.min.js"></script>
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <script src="/lib/angular/angular.min.js"></script>
+  <script src="/lib/angular-route/angular-route.min.js"></script>
   <!-- Main app script -->
-  <script src="app/app.js"></script>
+  <script src="/app/app.js"></script>
   <!-- Factory scripts -->
-  <script src="app/factories/ForestFactory.js"></script>
+  <script src="/app/factories/ForestFactory.js"></script>
   <!-- Controller Scripts -->
-  <script src="app/controllers/forestFavoriteControl.js"></script>
+  <script src="/app/controllers/forestFavoriteControl.js"></script>
 
 
 </body>
