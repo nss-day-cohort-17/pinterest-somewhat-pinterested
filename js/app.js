@@ -20,19 +20,19 @@ app.config(function($routeProvider, $locationProvider){
     })
     .when('/yourPins', {
         controller: 'UserPinsCtrl',
-        templateUrl: 'partials/login.html'
+        templateUrl: 'partials/userPins.html'
     })
     .when('/yourPins/:somePin', {
-        controller: 'LoginCtrl',
-        templateUrl: 'partials/login.html'
+        controller: 'test',
+        templateUrl: 'test'
     })
     .when('/yourBoards', {
         controller: 'UserBoardsCtrl',
-        templateUrl: 'partials/login.html'
+        templateUrl: 'partials/userBoards.html'
     })
     .when('/yourBoards:someBoard', {
-        controller: 'LoginCtrl',
-        templateUrl: 'partials/login.html'
+        controller: 'test',
+        templateUrl: 'test/login.html'
     })
     .when('/createPin', {
         controller: 'LoginCtrl',
