@@ -1,0 +1,22 @@
+{
+  "boards": {
+    "K66hzzzyyyy": {
+      "title": "Test Dude",
+      "uid": "12345"
+    }
+  },
+  "pins": {
+    "K84hfurycvb": {
+      "boardid": "K66hzzzyyyy",
+      "title": "Cat Picture",
+      "uid": "12345",
+      "url": "https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"
+    }
+  },
+  "users": {
+    "K84hddnjx9v": {
+      "name": "Test Dude",
+      "uid": "12345"
+    }
+  }
+}
