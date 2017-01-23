@@ -2,11 +2,7 @@
   "name": "pinterest-somewhat-pinterested",
   "homepage": "https://github.com/nss-day-cohort-17/pinterest-somewhat-pinterested",
   "authors": [
-<<<<<<< HEAD
-    "T-Farmer"
-=======
     "Wisbell <westleyisbell@gmail.com>"
->>>>>>> 9d42c6ee8e7b9240dbaf8f20d5021cbf94a8c4b4
   ],
   "description": "",
   "main": "",
@@ -16,20 +12,12 @@
     "node_modules",
     "bower_components",
     "test",
-<<<<<<< HEAD
-    "tests"
-  ],
-  "dependencies": {
-    "angular-route": "^1.6.1",
-    "angular": "^1.6.1",
-    "materialize": "^0.97.8"
-=======
     "tests",
     "lib"
   ],
   "dependencies": {
     "angular": "^1.6.1",
-    "angular-route": "^1.6.1"
->>>>>>> 9d42c6ee8e7b9240dbaf8f20d5021cbf94a8c4b4
+    "angular-route": "^1.6.1",
+    "materialize": "^0.97.8"
   }
 }

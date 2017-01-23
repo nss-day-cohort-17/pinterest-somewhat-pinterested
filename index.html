@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="/bower_components/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/lib/materialize/dist/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Somewhat Pinterested</title>
   </head>
@@ -19,25 +20,6 @@
         </ul>
       </div>
     </nav> -->
-  <h3>Register</h3>
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s4">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s4">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s4">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
     <div class="container">
       <div ng-app="pinterestApp">
         <div ng-view></div>
@@ -47,12 +29,13 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="/lib/materialize/dist/js/materialize.min.js"></script>
     <!-- Main app script -->
+    <script src="app/type.js"></script>
     <script src="app/app.js"></script>
     <!-- Factory scripts -->
-    <script src="app/factories/ForestFactory.js"></script>
+    <!-- <script src="app/factories/ForestFactory.js"></script> -->
     <!-- Controller Scripts -->
-    <script src="app/controllers/forestFavoriteControl.js"></script>
-    <script src="/partials/register.js"></script>
+    <!-- <script src="app/controllers/forestFavoriteControl.js"></script> -->
   </body>
 </html>
