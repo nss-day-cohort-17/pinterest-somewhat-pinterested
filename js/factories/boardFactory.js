@@ -9,5 +9,15 @@ app.factory('BoardFactory', function($http){
                   return val.data
               })
             }
+          },
+
+          createNewBoard: function(uid, boardid, url, title){
+
+              let newBoard = {
+                "uid": uid,
+                "title": title
+              }
+
+              $http.post('https://somewhat-pinterested.firebaseio.com/pins.json', JSON.stringify(newBoard))
           }
 })
