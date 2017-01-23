@@ -36,11 +36,11 @@ app.config(function($routeProvider, $locationProvider){
     })
     .when('/createPin', {
         controller: 'LoginCtrl',
-        templateUrl: 'partials/login.html'
+        templateUrl: 'partials/createpin.html'
     })
     .when('/createBoard', {
         controller: 'LoginCtrl',
-        templateUrl: 'partials/login.html'
+        templateUrl: 'partials/createboard.html'
     })
     .otherwise({
         redirectTo: '/'
