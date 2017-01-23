@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>National Parks App</title>
-  <link rel="stylesheet" type="text/css" href="lib/materialize/dist/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-</head>
-<body>
-
+  <head>
+    <link rel="stylesheet" type="text/css" href="/lib/materialize/dist/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Somewhat Pinterested</title>
+  </head>
+  <body>
     <!-- Make a Nav -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">National Parks</a>
+    <!-- <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">National Parks</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/login.html">Login</a></li>
+          <li class="active"><a href="#/register.html">Register</a></li>
+          <li class="active"><a href="#/forests">Forest List</a></li>
+        </ul>
       </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#/login.html">Login</a></li>
-        <li class="active"><a href="#/register.html">Register</a></li>
-        <li class="active"><a href="#/forests">Forest List</a></li>
-      </ul>
+    </nav> -->
+    <div class="container">
+      <div ng-app="pinterestApp">
+        <div ng-view></div>
+      </div>
     </div>
-  </nav>
-
-  <div class="container">
-    <div ng-app="pinterestApp">
-      <div ng-view></div>
-    </div>
-  </div>
-
-  <!-- Dependency scripts -->
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/angular-route/angular-route.min.js"></script>
-  <!-- Main app script -->
-  <script src="app/app.js"></script>
-  <!-- Factory scripts -->
-  <script src="app/factories/ForestFactory.js"></script>
-  <!-- Controller Scripts -->
-  <script src="app/controllers/forestFavoriteControl.js"></script>
-
-
-</body>
+    <!-- Dependency scripts -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="/lib/materialize/dist/js/materialize.min.js"></script>
+    <!-- Main app script -->
+    <script src="app/type.js"></script>
+    <script src="app/app.js"></script>
+    <!-- Factory scripts -->
+    <!-- <script src="app/factories/ForestFactory.js"></script> -->
+    <!-- Controller Scripts -->
+    <!-- <script src="app/controllers/forestFavoriteControl.js"></script> -->
+  </body>
 </html>
