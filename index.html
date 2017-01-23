@@ -3,24 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>National Parks App</title>
+  <title>Somewhat Pinterested</title>
   <link rel="stylesheet" type="text/css" href="/lib/materialize/dist/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <!-- ___________________________________ -->
 <body>
   <div class="wrapper">
 
-<!-- naviagtion -->
+<!-- Navigation -->
 
           <nav class="navigation navbar-fixed">
-              <a href="#" class="brand-logo right">Logo</a>
+              <a href="#" class="brand-logo right">User Name - Picture</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
               <li class="active">
-                <a href="xx.html">Home</a>
+                <a href="#l">Home</a>
               </li>
               <li>
-                <a href="xx.html">Pin</a>
+                <a href="#">Pin</a>
                 </li>
              <!-- Dropdown Trigger -->
                 <li>
@@ -37,7 +38,7 @@
           </nav>
 
 
-<!-- search bar -->
+<!-- Search bar -->
         <form>
           <div class="input-field">
             <input id="search" type="search" required>
@@ -67,7 +68,7 @@
 
 
 <!-- PLACEHOLDER -->
-              <div class="center">
+    <!--           <div class="center">
 
               <h1>CONTENT</h1>
               <h1>CONTENT</h1>
@@ -75,10 +76,10 @@
               <h1>CONTENT</h1>
               <h1>CONTENT</h1>
               </div>
-
+ -->
 <!-- PLACEHOLDER END -->
 
-<!-- angular -->
+<!-- Angular -->
     <div ng-app="pinterestApp"> <!-- angular ng-app (initate) -->
       <div ng-view> <!-- angular ng-view -->
 
@@ -115,7 +116,7 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
+            © 2017 Copyright SomeWhat Pinterest
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
@@ -133,13 +134,13 @@
   <script src="/lib/angular/angular.min.js"></script>
   <script src="/lib/angular-route/angular-route.min.js"></script>
   <!-- Main app script -->
-  <script src="/app/app.js"></script>
+  <script src="/js/app.js"></script>
   <!-- Factory scripts -->
   <script src="js/factories/boardFactory.js"></script>
   <script src="js/factories/pinFactory.js"></script>
   <!-- Controller Scripts -->
   <script src="/js/controllers/boardCtrl.js"></script>
-  <script src="/js/controllers/pinsCtrl.js"></script>
+  <script src="/js/controllers/mainCtrl.js"></script>
   <!-- Materialize Functionality -->
   <script src="/js/materializeFunction.js"></script>
 

@@ -1,1 +1,11 @@
+<!-- When logged in show a list of all pins from all users -->
+
 <h2>Main view</h2>
+
+<li>This view will show a list of all pins from the pins.json file</li>
+
+<div class="row">
+  <div ng-repeat="pin in allUserPinList">
+    {{pin}}
+  </div>
+</div>

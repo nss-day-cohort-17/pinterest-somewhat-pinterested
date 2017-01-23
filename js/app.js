@@ -18,6 +18,30 @@ app.config(function($routeProvider, $locationProvider){
         controller: 'LoginCtrl',
         templateUrl: 'partials/login.html'
     })
+    .when('/yourPins', {
+        controller: 'UserPinsCtrl',
+        templateUrl: 'partials/login.html'
+    })
+    .when('/yourPins/:somePin', {
+        controller: 'LoginCtrl',
+        templateUrl: 'partials/login.html'
+    })
+    .when('/yourBoards', {
+        controller: 'UserBoardsCtrl',
+        templateUrl: 'partials/login.html'
+    })
+    .when('/yourBoards:someBoard', {
+        controller: 'LoginCtrl',
+        templateUrl: 'partials/login.html'
+    })
+    .when('/createPin', {
+        controller: 'LoginCtrl',
+        templateUrl: 'partials/login.html'
+    })
+    .when('/createBoard', {
+        controller: 'LoginCtrl',
+        templateUrl: 'partials/login.html'
+    })
     .otherwise({
         redirectTo: '/'
     })
