@@ -7,7 +7,7 @@
   </head>
   <body>
     <!-- Make a Nav -->
-    <nav class="navbar navbar-default">
+    <!-- <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">National Parks</a>
@@ -18,8 +18,26 @@
           <li class="active"><a href="#/forests">Forest List</a></li>
         </ul>
       </div>
-    </nav>
-
+    </nav> -->
+  <h3>Register</h3>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
     <div class="container">
       <div ng-app="pinterestApp">
         <div ng-view></div>
@@ -35,5 +53,6 @@
     <script src="app/factories/ForestFactory.js"></script>
     <!-- Controller Scripts -->
     <script src="app/controllers/forestFavoriteControl.js"></script>
+    <script src="/partials/register.js"></script>
   </body>
 </html>
