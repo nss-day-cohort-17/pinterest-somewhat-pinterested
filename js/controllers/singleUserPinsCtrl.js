@@ -1,9 +1,11 @@
 app.controller('SingleUserPinsCtrl', function($scope, PinFactory){
     console.log('MainCtrl loaded.  Show all pins from all users')
 
-    PinFactory.getSpecificUserPinsList()
+    $scope.uid = "37211"
+
+    PinFactory.getSpecificUserPinsList($scope.uid)
         .then(function(val){
-            console.log("All user pin list?", val)
+            console.log("single user pin list?", val)
 
             $scope.specificUserPinsList = val
         })

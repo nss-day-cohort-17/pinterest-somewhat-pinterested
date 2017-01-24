@@ -11,4 +11,4 @@
 // ...
 
 // <div class="element"></div>
-<script src
+// <script src
