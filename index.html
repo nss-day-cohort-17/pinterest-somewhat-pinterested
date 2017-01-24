@@ -10,7 +10,7 @@
 </head>
 <!-- ___________________________________ -->
 <body>
-  <div class="wrapper">
+
 
 <!-- Navigation -->
 
@@ -52,32 +52,23 @@
         </form>
 
         <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
+<!--         <ul id="dropdown1" class="dropdown-content">
           <li>
             <a href="#!">users board A</a>
           </li>
           <li>
             <a href="#!">users board B</a>
           </li>
-        <!--   <li class="divider"></li> -->
           <li>
             <a href="#!">users board C</a>
           </li>
-        </ul>
+        </ul> -->
 <!-- end navigation -->
 
+<div class="wrapper">
 
-<!-- PLACEHOLDER -->
-    <!--           <div class="center">
 
-              <h1>CONTENT</h1>
-              <h1>CONTENT</h1>
-              <h1>CONTENT</h1>
-              <h1>CONTENT</h1>
-              <h1>CONTENT</h1>
-              </div>
- -->
-<!-- PLACEHOLDER END -->
+
 
 <!-- Angular -->
     <div ng-app="pinterestApp"> <!-- angular ng-app (initate) -->
@@ -92,7 +83,7 @@
 <!-- end angular -->
 
 
-
+  </div> <!-- div wrapper end -->
 
 
 <!-- footer -->
@@ -125,7 +116,7 @@
 
 
 
-  </div> <!-- div container end -->
+
 
 <!-- _____________________________________ -->
   <!-- Dependency scripts -->
@@ -138,11 +129,11 @@
   <!-- Materialize Functionality -->
   <script src="/js/materializeFunction.js"></script>
   <!-- Factory scripts -->
-  <script src="js/factories/boardFactory.js"></script>
+  <script src="js/factories/BoardFactory.js"></script>
   <script src="js/factories/pinFactory.js"></script>
   <!-- Controller Scripts -->
 
-  <script src="/js/controllers/boardCtrl.js"></script>
+  <script src="/js/controllers/BoardViewCtrl.js"></script>
   <script src="/js/controllers/mainCtrl.js"></script>
   <script src="/js/controllers/singleUserPinsCtrl.js"></script>
   <script src="/js/controllers/createPinCtrl.js"></script>
