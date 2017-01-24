@@ -1,7 +1,7 @@
 app.factory('PinFactory', function($http){
 
   return {
-            getUserPinsList: function(){
+            getSpecificUserPinsList: function(){
               // https://west-doctors-patients.firebaseio.com/patients.json?orderBy="doctor_id"&equalTo="${doctor_id}"`)
               // https://somewhat-pinterested.firebaseio.com/pins.json?orderBy="uid"&equalTo="${user.uid}"`)
               return $http.get('https://somewhat-pinterested.firebaseio.com/pins.json')
@@ -21,6 +21,15 @@ app.factory('PinFactory', function($http){
               }
 
               $http.post('https://somewhat-pinterested.firebaseio.com/pins.json', JSON.stringify(newPin))
+          },
+
+            getAllUserPinList: function(){
+
+              return $http.get('https://somewhat-pinterested.firebaseio.com/pins.json')
+                .then(function(val){
+                  console.log("val", val)
+                  return val.data
+              })
           }
         }
 })
