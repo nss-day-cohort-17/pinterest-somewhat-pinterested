@@ -1,4 +1,3 @@
-
   console.log("BoardFactory");
 
 app.factory('BoardFactory', function($http) {
