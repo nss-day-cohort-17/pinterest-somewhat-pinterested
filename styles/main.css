@@ -4,22 +4,43 @@ body {
 }
 
 .wrapper {
-	width: 90%;
+	width: 85%;
 	height: auto;
 	background-color: white;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
 }
 
-/*FOR PLACEHOLDER*/
-.center {
-	align-content: center;
+.dynamic-wrapper {
+	margin-top: 2%;
 }
 
 .navigation {
-	background-color: #ffad99;
+	background-color: #f2f2f2;
 }
 
-.brand-logo {
-  font-size: 10px;
+.page-footer {
+	background-color: #f2f2f2;
+}
+
+#search {
+	width: 400px;
+	border-radius: 10px;
+	height: 50px;
+	margin-top: .8%;
+}
+
+img, .card {
+	border-radius: 10px;
+}
+
+.logo-img {
+	height: 60px;
+	width: auto;
+	margin-right: 10px;
+}
+
+.logout-button {
+	margin-right: 2%;
+	margin-top: .8%;
 }

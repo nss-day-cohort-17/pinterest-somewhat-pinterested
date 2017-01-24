@@ -13,43 +13,60 @@
 
 
 <!-- Navigation -->
+      <div class="navbar-fixed">
+          <nav class="navigation">
+     <!-- log out -->
+              <a class="logout-button
+              btn
+              right inline
+              brown lighten-4
+              blue-grey-text text-darken-4 ">Log Out</a>
+     <!-- logo -->
+              <a href="#" class="brand-logo center">
+              <img src="/styles/img/somewhatPinterested.png" class="logo-img"></a>
 
-          <nav>
-            <div class="nav-wrapper">
-              <div class="row">
-                <div class="col s12">
-                  <div class="col s4">
-                    <a href="#" class="center brand-logo">Profile<i class="large material-icons">perm_identity</i></a>
-                  <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li class="active"><a href="#l">Home</a></li>
-                    <li><a href="#/yourPins">Pin</a></li>
-                  </ul>
-                  </div>
-                   <!-- Dropdown Trigger -->
-                    <ul>
-                      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Boards<i class="large material-icons left">picture_in_picture</i></a></li>
-                      <ul class="right hide-on-med-and-down">
-                        <li><a class="waves-effect waves-light btn-large">Log Out<i class="large material-icons right">not_interested</i></a></li>
-                      </ul>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-          </nav>
+
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <li class="active">
+                <a href="#l" class="blue-grey-text text-darken-4">Home</a>
+              </li>
+              <li>
+                <a href="#/yourPins" class="blue-grey-text text-darken-4">Pin</a>
+                </li>
+              <li>
+                <a href="#/yourPins" class="blue-grey-text text-darken-4">Your Boards</a>
+              </li>
+
+             <!-- Dropdown Trigger -->
+               <!--  <li>
+                  <a class="dropdown-button" href="#!" data-activates="dropdown1">
+                    <i class="material-icons right">Users Boards
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a class="waves-effect waves-light btn">Log Out
+                  </a>
+                </li> -->
+             </ul>
+
+
 
 
 <!-- Search bar -->
         <form>
-          <div class="input-field">
+          <div class="input-field inline">
             <input id="search" type="search" required>
             <label for="search">
-              <i class="material-icons">search
-              </i>
+              <i class="material-icons blue-grey-text text-darken-2">search</i>
             </label>
-              <i class="material-icons">close
-              </i>
+              <i class="material-icons">close</i>
           </div> <!-- input-field -->
         </form>
+
+
+        </nav>
+      </div> <!-- navbar-fixed end -->
 
         <!-- Dropdown Structure -->
 <!--         <ul id="dropdown1" class="dropdown-content">
