@@ -8,3 +8,5 @@ app.controller('MainCtrl', function($scope, PinFactory){
             $scope.allUserPinList = val
         })
 })
+
+$('.materialboxed').materialbox();
