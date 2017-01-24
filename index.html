@@ -10,7 +10,7 @@
 </head>
 <!-- ___________________________________ -->
 <body>
-  <div class="wrapper">
+
 
 <!-- Navigation -->
 
@@ -22,9 +22,11 @@
               </li>
               <li>
                 <a href="#/yourPins">Pin</a>
+                </li>              <li>
+                <a href="#/yourPins">Your Boards</a>
                 </li>
              <!-- Dropdown Trigger -->
-                <li>
+               <!--  <li>
                   <a class="dropdown-button" href="#!" data-activates="dropdown1">
                     <i class="material-icons right">Users Boards
                     </i>
@@ -33,7 +35,7 @@
                 <li>
                   <a class="waves-effect waves-light btn">Log Out
                   </a>
-                </li>
+                </li> -->
               </ul>
           </nav>
 
@@ -52,32 +54,23 @@
         </form>
 
         <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
+<!--         <ul id="dropdown1" class="dropdown-content">
           <li>
             <a href="#!">users board A</a>
           </li>
           <li>
             <a href="#!">users board B</a>
           </li>
-        <!--   <li class="divider"></li> -->
           <li>
             <a href="#!">users board C</a>
           </li>
-        </ul>
+        </ul> -->
 <!-- end navigation -->
 
+<div class="wrapper">
 
-<!-- PLACEHOLDER -->
-    <!--           <div class="center">
 
-              <h1>CONTENT</h1>
-              <h1>CONTENT</h1>
-              <h1>CONTENT</h1>
-              <h1>CONTENT</h1>
-              <h1>CONTENT</h1>
-              </div>
- -->
-<!-- PLACEHOLDER END -->
+
 
 <!-- Angular -->
     <div ng-app="pinterestApp"> <!-- angular ng-app (initate) -->
@@ -92,7 +85,7 @@
 <!-- end angular -->
 
 
-
+  </div> <!-- div wrapper end -->
 
 
 <!-- footer -->
@@ -125,7 +118,7 @@
 
 
 
-  </div> <!-- div container end -->
+
 
 <!-- _____________________________________ -->
   <!-- Dependency scripts -->
@@ -146,7 +139,7 @@
   <script src="/js/controllers/mainCtrl.js"></script>
   <script src="/js/controllers/singleUserPinsCtrl.js"></script>
   <script src="/js/controllers/createPinCtrl.js"></script>
- 
+
 
 
 </body>
