@@ -18,7 +18,7 @@
 
       <div class="card-action">
         <a href="#/createBoard">Make a New Board</a>
-        <a href="#">This is a link</a>
+        <a>stuffs</a>
       </div>
 
     </div>
@@ -26,11 +26,16 @@
 
   <!-- Grab all boards owned by the current user and display them -->
   <div ng-repeat="board in specificUserBoardList" class="col s12 m3">
-    <div class="card">
-      {{board}}
-      <!-- Show picture here -->
-      <div>
-        <img class="responsive-img materialboxed center" src="{{pin.url}}">
+    <div class="card blue-grey darken-1">
+
+      <div class="card-content white-text">
+        <span class="card-title">{{board.title}}</span>
+        <p>We should make this look purty somehow</p>
+      </div>
+
+      <div class="card-action">
+        <a href="#/createBoard">delete board button?</a>
+        <a>stuffs</a>
       </div>
 
     </div>

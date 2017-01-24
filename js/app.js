@@ -32,7 +32,7 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl: 'test'
     })
     .when('/yourBoards', {
-        controller: 'UserBoardsCtrl',
+        controller: 'SingleUserBoardsCtrl',
         templateUrl: 'partials/userBoards.html'
     })
     .when('/yourBoards:someBoard', {
