@@ -23,7 +23,7 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl: 'partials/user.html'
     })
     .when('/yourPins', {
-        controller: 'UserPinsCtrl',
+        controller: 'SingleUserPinsCtrl',
         templateUrl: 'partials/userPins.html'
     })
     .when('/yourPins/:somePin', {

@@ -3,7 +3,7 @@
 <h2>Main view</h2>
 
 <li>This view will show a list of all pins from the pins.json file</li>
-
+<!--
 <div class="row">
   <div ng-repeat="pin in allUserPinList">
     {{pin}}
@@ -14,5 +14,30 @@
       <li>Unique ID: {{pin.uid}}</li>
       <li>Url: {{pin.url}}</li>
     </ul>
+  </div>
+</div> -->
+
+<div class="row">
+
+  <!-- Grab all pins owned by the current user and display them -->
+  <div ng-repeat="pin in allUserPinList" class="col s12 m3">
+    <div class="card blue-grey darken-1">
+
+  <!--     <div class="card-content white-text">
+        <span class="card-title">{{pin.title}}</span>
+        <p>Woah, a pin fron pins.json</p>
+      </div>
+
+      <div class="card-action">
+        <a href="#">This is a link</a>
+        <a href="#">This is a link</a>
+      </div> -->
+
+      <!-- Show picture here -->
+      <div>
+        <img class="responsive-img" src="{{pin.url}}">
+      </div>
+
+    </div>
   </div>
 </div>
