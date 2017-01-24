@@ -1,0 +1,24 @@
+{
+  "name": "pinterest-somewhat-pinterested",
+  "homepage": "https://github.com/nss-day-cohort-17/pinterest-somewhat-pinterested",
+  "authors": [
+    "Wisbell <westleyisbell@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "lib"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "materialize": "^0.97.8",
+    "firebase": "^3.6.6"
+  }
+}

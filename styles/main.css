@@ -1,0 +1,25 @@
+body {
+	background-color: white;
+	margin: 0;
+}
+
+.wrapper {
+	width: 90%;
+	height: auto;
+	background-color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*FOR PLACEHOLDER*/
+.center {
+	align-content: center;
+}
+
+.navigation {
+	background-color: #ffad99;
+}
+
+.brand-logo {
+  font-size: 10px;
+}
