@@ -1,5 +1,6 @@
 console.log("app.js loaded")
 
+
 const app = angular.module('pinterestApp', ['ngRoute'])
 
 app.config(function($routeProvider, $locationProvider){
@@ -20,7 +21,7 @@ app.config(function($routeProvider, $locationProvider){
     })
     .when('/yourStuffs', {
         controller: 'test',
-        templateUrl: 'partials/user.html'
+        templateUrl: 'partials/userPage.html'
     })
     .when('/yourPins', {
         controller: 'SingleUserPinsCtrl',
@@ -39,11 +40,11 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl: 'test/login.html'
     })
     .when('/createPin', {
-        controller: 'LoginCtrl',
-        templateUrl: 'partials/createpin.html'
+        controller: 'CreatePinCtrl',
+        templateUrl: 'partials/createPin.html'
     })
     .when('/createBoard', {
-        controller: 'LoginCtrl',
+        controller: 'test',
         templateUrl: 'partials/createboard.html'
     })
     .otherwise({
