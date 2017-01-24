@@ -2,8 +2,10 @@ console.log("i materialize!")
 
 $( document ).ready(function() {
 
-	console.log(".ready")
+	console.log("materialize ready")
 	$(".dropdown-button").dropdown();
 
-  $('select').material_select();
+ 	$('select').material_select();
+
+ 	$('.materialboxed').materialbox();
 });
