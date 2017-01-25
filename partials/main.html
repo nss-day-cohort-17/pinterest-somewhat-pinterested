@@ -17,11 +17,12 @@
   </div>
 </div> -->
 
-<div class="row dynamic-wrapper">
+<div class="grid dynamic-wrapper">
 
   <!-- Grab all pins owned by the current user and display them -->
-  <div ng-repeat="pin in allUserPinList" class="col s12 m3">
-    <div class="card">
+
+
+    <div ng-repeat="pin in allUserPinList" class="">
 
   <!--     <div class="card-content white-text">
         <span class="card-title">{{pin.title}}</span>
@@ -33,11 +34,8 @@
         <a href="#">This is a link</a>
       </div> -->
 
-      <!-- Show picture here -->
-      <div>
-        <img class="responsive-img materialboxed center" src="{{pin.url}}">
-      </div>
+<!-- Show picture here -->
 
-    </div>
+        <img class="responsive-img grid-item materialboxed center" src="{{pin.url}}">
   </div>
 </div>

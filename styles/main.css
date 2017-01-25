@@ -4,11 +4,11 @@ body {
 }
 
 .wrapper {
-	width: 85%;
+	width: 90%;
 	height: auto;
 	background-color: white;
-	margin-left: 7.5%;
-	margin-right: 7.5%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .dynamic-wrapper {
@@ -16,10 +16,6 @@ body {
 }
 
 .navigation {
-	background-color: #f2f2f2;
-}
-
-.page-footer {
 	background-color: #f2f2f2;
 }
 
@@ -43,4 +39,36 @@ img, .card {
 .logout-button {
 	margin-right: 2%;
 	margin-top: .8%;
+}
+
+* { box-sizing: border-box; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: white;
+  width: 100%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 18%;
+  height: auto;
+  float: right;
+  /* vertical gutter */
+/*  margin-bottom: 2%*/;
+  background: white;
+  border: 1px solid black;
+  border-color: grey;
+  border-radius: 15px;
+  margin: .8%;
 }
