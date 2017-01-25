@@ -18,12 +18,12 @@ app.factory('BoardFactory', function($http){
               }
 
               $http.post('https://somewhat-pinterested.firebaseio.com/pins.json', JSON.stringify(newBoard))
+            },
+
+            deleteSpecificUserBoard: function(boardName){
+              console.log("delete board function")
+              console.log("delete url", `https://somewhat-pinterested.firebaseio.com/boards/${boardName}.json`)
+              $http.delete(`https://somewhat-pinterested.firebaseio.com/boards/${boardName}.json`)
             }
-          },
-
-
-          deleteSpecificUserBoard: function(){
-
-            $delete.
           }
 })
