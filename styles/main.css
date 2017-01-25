@@ -32,6 +32,7 @@ body {
 
 img, .card {
 	border-radius: 10px;
+	width: 350px;
 }
 
 .logo-img {
@@ -45,6 +46,6 @@ img, .card {
 	margin-top: .8%;
 }
 
-.cork {
+.fixed-action-button {
 
 }
