@@ -1,6 +1,3 @@
-// 20170124113516
-// https://somewhat-pinterested.firebaseio.com/.json
-
 {
   "boards": {
     "K66hzzzyyyy": {
@@ -9,19 +6,19 @@
     },
     "K67hzzzyyyy": {
       "title": "Dogs",
-      "uid": "12345"
+      "uid": "54321"
     },
     "K68hzzzyyyy": {
       "title": "Crafts",
-      "uid": "12345"
+      "uid": "54321"
     },
     "K69hzzzyyyy": {
       "title": "Tech",
-      "uid": "12345"
+      "uid": "54321"
     },
     "K70hzzzyyyy": {
       "title": "Cars",
-      "uid": "12345"
+      "uid": "37211"
     }
   },
   "pins": {
@@ -111,15 +108,15 @@
     }
   },
   "users": {
-    "K84hddnjx9v": {
+    "K84hddnjx9va": {
       "name": "Cat Person",
       "uid": "12345"
     },
-    "K84hddnjx9v": {
+    "K84hddnjx9vb": {
       "name": "Willy Wonka",
       "uid": "37211"
     },
-    "K84hddnjx9v": {
+    "K84hddnjx9vc": {
       "name": "Test Dude",
       "uid": "54321"
     }

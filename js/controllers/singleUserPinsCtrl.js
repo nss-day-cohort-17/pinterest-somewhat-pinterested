@@ -7,6 +7,6 @@ app.controller('SingleUserPinsCtrl', function($scope, PinFactory){
         .then(function(val){
             console.log("single user pin list?", val)
 
-            $scope.specificUserPinsList = val
+            $scope.specificUserPinList = val
         })
 })
