@@ -3,6 +3,7 @@
 
  app.factory('AuthFactory', ($q) => {
    return {
+
      login (email, pass) {
        // converts native ES6 promise to angular promise so no $scope.$apply needed
        return $q.resolve(firebase.auth().signInWithEmailAndPassword(email, pass));
@@ -11,9 +12,27 @@
      getUserId () {
        return firebase.auth().currentUser.uid;
        console.log(currentUser.uid);
+     },
+
+     register (email, pass) {
+        return $q.resolve(firebase.auth().createUserWithEmailAndPassword(email, pass))
+     },
+
+      // get user key name and post it to   users.json
+     putNewUserInFirebase () {
+      var userId = firebase.auth().currentUser.uid
+      var userEmail = firebase.auth().currentUser.email
+
+      var newUser = {
+                      "name": userEmail,
+                      "uid": userId
+                    }
+
+      $http.post(`https://somewhat-pinterested.firebaseio.com/users.json`, JSON.stringify(newUser))
      }
    };
  });
+
 
 //app.factory('AuthFactory', function() {
 // let createUser = function (userObj) {
