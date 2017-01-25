@@ -1,50 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>National Parks App</title>
+  <title>Somewhat Pinterested</title>
   <link rel="stylesheet" type="text/css" href="/lib/materialize/dist/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
 <!-- ___________________________________ -->
+<body>
 
 
+<!-- Navigation -->
+      <div class="navbar-fixed">
+          <nav class="navigation">
+     <!-- log out -->
+              <a class="logout-button
+              btn
+              right inline
+              brown lighten-4
+              blue-grey-text text-darken-4 ">Log Out</a>
+     <!-- logo -->
+              <a href="#" class="brand-logo center">
+              <img src="/styles/img/somewhatPinterested.png" class="logo-img"></a>
 
-<!-- naviagtion -->
-        <nav>
-          <div class="nav-wrapper">
-            <a href="#" class="brand-logo right">Logo</a>
+
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-              <li><a href="sass.html">Home</a></li>
-              <li><a href="badges.html">Boards</a></li>
-              <li><a href="collapsible.html">Pins</a></li>
-            </ul>
-          </div>
+              <li class="active">
+                <a href="#l" class="blue-grey-text text-darken-4">Home</a>
+              </li>
+              <li>
+                <a href="#/yourPins" class="blue-grey-text text-darken-4">Pin</a>
+                </li>
+              <li>
+                <a href="#/yourPins" class="blue-grey-text text-darken-4">Your Boards</a>
+              </li>
+
+             <!-- Dropdown Trigger -->
+               <!--  <li>
+                  <a class="dropdown-button" href="#!" data-activates="dropdown1">
+                    <i class="material-icons right">Users Boards
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a class="waves-effect waves-light btn">Log Out
+                  </a>
+                </li> -->
+             </ul>
+
+
+
+
+<!-- Search bar -->
+        <form>
+          <div class="input-field inline">
+            <input id="search" type="search" required>
+            <label for="search">
+              <i class="material-icons blue-grey-text text-darken-2">search</i>
+            </label>
+              <i class="material-icons">close</i>
+          </div> <!-- input-field -->
+        </form>
+
+
         </nav>
+      </div> <!-- navbar-fixed end -->
+
+        <!-- Dropdown Structure -->
+<!--         <ul id="dropdown1" class="dropdown-content">
+          <li>
+            <a href="#!">users board A</a>
+          </li>
+          <li>
+            <a href="#!">users board B</a>
+          </li>
+          <li>
+            <a href="#!">users board C</a>
+          </li>
+        </ul> -->
 <!-- end navigation -->
 
+<div class="wrapper">
 
 
 
+
+<!-- Angular -->
     <div ng-app="pinterestApp"> <!-- angular ng-app (initate) -->
       <div ng-view> <!-- angular ng-view -->
+
+
+
+
+
       </div> <!-- end angular ng-view -->
     </div> <!-- end angular ng-app (initiate) -->
+<!-- end angular -->
+
+
+  </div> <!-- div wrapper end -->
+
+
+<!-- footer -->
+        <footer class="page-footer  grey lighten-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="grey-text text-darken-3">Footer Content</h5>
+                <p class="grey-text text-darken-3">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="grey-text text-darken-3">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-darken-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-darken-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-darken-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-darken-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container grey-text text-darken-3">
+            © 2017 Copyright SomeWhat Pinterest, but also maybe not.
+            <a class="grey-text text-darken-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+<!-- footer end -->
+
+
+
 
 
 <!-- _____________________________________ -->
   <!-- Dependency scripts -->
   <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <script src="/lib/materialize/dist/js/materialize.min.js"></script>
   <script src="/lib/angular/angular.min.js"></script>
   <script src="/lib/angular-route/angular-route.min.js"></script>
+
+  <script src="/lib/masonry/dist/masonry.pkgd.js"></script>
+
   <!-- Main app script -->
-  <script src="/app/app.js"></script>
+  <script src="/js/app.js"></script>
+  <!-- Materialize Functionality -->
+  <script src="/js/materializeFunction.js"></script>
+
   <!-- Factory scripts -->
-  <script src="/app/factories/ForestFactory.js"></script>
+  <script src="js/factories/BoardFactory.js"></script>
+  <script src="js/factories/pinFactory.js"></script>
   <!-- Controller Scripts -->
-  <script src="/app/controllers/forestFavoriteControl.js"></script>
+
+  <script src="/js/controllers/BoardViewCtrl.js"></script>
+  <script src="/js/controllers/mainCtrl.js"></script>
+  <script src="/js/controllers/singleUserPinsCtrl.js"></script>
+  <script src="/js/controllers/createPinCtrl.js"></script>
+
+
+
 
 
 </body>
+
 </html>

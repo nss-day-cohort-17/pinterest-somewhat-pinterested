@@ -1,0 +1,40 @@
+<!-- When logged in show a list of all pins from all users -->
+
+<!-- <h2>Main view</h2>
+
+<li>This view will show a list of all pins from the pins.json file</li> -->
+<!--
+<div class="row">
+  <div ng-repeat="pin in allUserPinList">
+    {{pin}}
+    <ul>
+      <li>Pin Info</li>
+      <li>Board ID: {{pin.boardid}}</li>
+      <li>Title: {{pin.title}}</li>
+      <li>Unique ID: {{pin.uid}}</li>
+      <li>Url: {{pin.url}}</li>
+    </ul>
+  </div>
+</div> -->
+
+<div class="grid dynamic-wrapper">
+
+  <!-- Grab all pins owned by the current user and display them -->
+
+  <div ng-repeat="pin in allUserPinList" class="">
+<!--     <div class="card"> -->
+
+  <!--     <div class="card-content white-text">
+        <span class="card-title">{{pin.title}}</span>
+        <p>Woah, a pin fron pins.json</p>
+      </div>
+
+      <div class="card-action">
+        <a href="#">This is a link</a>
+        <a href="#">This is a link</a>
+      </div> -->
+
+      <!-- Show picture here -->
+        <img class="responsive-img grid-item materialboxed center" src="{{pin.url}}">
+  </div>
+</div>
