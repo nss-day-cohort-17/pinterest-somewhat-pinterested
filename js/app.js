@@ -6,6 +6,17 @@ const app = angular.module('pinterestApp', ['ngRoute'])
 app.config(function($routeProvider, $locationProvider){
     $locationProvider.hashPrefix('');
 
+     // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBoxmTcMPKoZ12HwiX-0quM5Zlol-BFCCs",
+        authDomain: "somewhat-pinterested.firebaseapp.com",
+        databaseURL: "https://somewhat-pinterested.firebaseio.com",
+        storageBucket: "somewhat-pinterested.appspot.com",
+        messagingSenderId: "568015842356"
+      };
+      firebase.initializeApp(config);
+
+
     $routeProvider
     .when('/', {
         controller: 'MainCtrl',
