@@ -8,4 +8,6 @@ $( document ).ready(function() {
  	$('select').material_select();
 
  	$('.materialboxed').materialbox();
+
+  $('.tooltipped').tooltip({delay: 50});
 });

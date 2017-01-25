@@ -51,5 +51,3 @@ app.config(function($routeProvider, $locationProvider){
         redirectTo: '/'
     })
 })
-
-$('.materialboxed').materialbox();
