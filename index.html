@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <!-- ___________________________________ -->
-<body>
+<body ng-app="pinterestApp">
 
 
 <!-- Navigation -->
@@ -31,10 +31,10 @@
                 <a href="#l" class="blue-grey-text text-darken-4">Home</a>
               </li>
               <li>
-                <a href="#/yourPins" class="blue-grey-text text-darken-4">Pin</a>
+                <a href="#/yourPins" class="blue-grey-text text-darken-4">Your Pins</a>
                 </li>
               <li>
-                <a href="#/yourPins" class="blue-grey-text text-darken-4">Your Boards</a>
+                <a href="#/yourBoards" class="blue-grey-text text-darken-4">Your Boards</a>
               </li>
 
              <!-- Dropdown Trigger -->
@@ -88,7 +88,7 @@
 
 
 <!-- Angular -->
-    <div ng-app="pinterestApp"> <!-- angular ng-app (initate) -->
+    <div> <!-- angular ng-app (initate) -->  <!-- Line 91 stuffs ng-app="pinterestApp" -->
       <div ng-view> <!-- angular ng-view -->
 
 
@@ -151,14 +151,14 @@
   <script src="/js/materializeFunction.js"></script>
 
   <!-- Factory scripts -->
-  <script src="js/factories/BoardFactory.js"></script>
+  <script src="js/factories/boardFactory.js"></script>
   <script src="js/factories/pinFactory.js"></script>
   <!-- Controller Scripts -->
-
-  <script src="/js/controllers/BoardViewCtrl.js"></script>
   <script src="/js/controllers/mainCtrl.js"></script>
+  <script src="/js/controllers/singleUserBoardsCtrl.js"></script>
   <script src="/js/controllers/singleUserPinsCtrl.js"></script>
   <script src="/js/controllers/createPinCtrl.js"></script>
+  <script src="/js/controllers/LoginCtrl.js"></script>
 
 
 
