@@ -1,10 +1,10 @@
 app.factory('PinFactory', function($http){
 
   return {
-            getSpecificUserPinsList: function(){
+            getSpecificUserPinsList: function(uid){
               // https://west-doctors-patients.firebaseio.com/patients.json?orderBy="doctor_id"&equalTo="${doctor_id}"`)
               // https://somewhat-pinterested.firebaseio.com/pins.json?orderBy="uid"&equalTo="${user.uid}"`)
-              return $http.get('https://somewhat-pinterested.firebaseio.com/pins.json')
+              return $http.get(`https://somewhat-pinterested.firebaseio.com/pins.json?orderBy="uid"&equalTo="${uid}"`)
                 .then(function(val){
                   console.log("val", val)
                   return val.data
