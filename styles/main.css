@@ -7,8 +7,8 @@ body {
 	width: 90%;
 	height: auto;
 	background-color: white;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 4.2%;
+	margin-right: 5.5%;
 }
 
 .dynamic-wrapper {
@@ -26,7 +26,7 @@ body {
 	margin-top: .8%;
 }
 
-img, .card {
+img, .card, .card-action {
 	border-radius: 10px;
 	width: 350px;
 }
@@ -50,38 +50,50 @@ img, .card {
 	margin-top: .8%;
 }
 
-.fixed-action-button {
+
+
+/***************************
+USER BOARDS
+***************************/
+
+.card {
+	border: 2px outset slategrey;
+	text-align: center;
+}
+
+
+
+/************************
+LOGIN PAGE
+************************/
+
+.auth-form {
+	margin-top: 3%;
+}
+
+
+.column-size {
+	width: 350px;
+	height: 350px;
+	/*margin-left:px;*/
+	margin-bottom: 50px;
+	border-radius: 30px;
+}
+
+.dynamic-wrapper {
+	margin-left: 12%;
 
 }
 
-* { box-sizing: border-box; }
-
-/* ---- grid ---- */
-
-.grid {
-  background: white;
-  width: 100%;
-}
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+.four-pins-for-board-display {
 
 }
 
-/* ---- grid-item ---- */
+.four-pins-for-for-board-image {
+	height: 80px;
+	width: 80px;
+	display: inline-flex;
+	margin: 2%;
 
-.grid-item {
-  width: 18%;
-  height: auto;
-  float: right;
-  /* vertical gutter */
-/*  margin-bottom: 2%*/;
-  background: white;
-  border: 1px solid black;
-  border-color: grey;
-  border-radius: 15px;
-  margin: .8%;
+
 }
