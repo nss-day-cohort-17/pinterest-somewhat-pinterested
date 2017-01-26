@@ -19,8 +19,11 @@ body {
 	background-color: #f2f2f2;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 5d17a0f075761fc29c94b68137b6ed63cda4449b
 #search {
 	width: 400px;
 	border-radius: 10px;
@@ -53,6 +56,7 @@ img, .card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fixed-action-button {
 
 }
@@ -60,6 +64,10 @@ img, .card {
 * { box-sizing: border-box; }
 
 
+=======
+* { box-sizing: border-box; }
+
+>>>>>>> 5d17a0f075761fc29c94b68137b6ed63cda4449b
 /* ---- grid ---- */
 
 .grid {
@@ -89,6 +97,9 @@ img, .card {
   border-radius: 15px;
   margin: .8%;
 }
+<<<<<<< HEAD
 
 
 >>>>>>> b3da3545cf11fc73d2ab13e9e7a080930eda3ade
+=======
+>>>>>>> 5d17a0f075761fc29c94b68137b6ed63cda4449b

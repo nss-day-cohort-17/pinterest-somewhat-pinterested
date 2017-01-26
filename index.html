@@ -13,14 +13,18 @@
 
 
 <!-- Navigation -->
-      <div class="navbar-fixed">
+      <div class="navbar-fixed" ng-controller="NavCtrl">
           <nav class="navigation">
      <!-- log out -->
               <a class="logout-button
               btn
               right inline
               brown lighten-4
+<<<<<<< HEAD
               blue-grey-text text-darken-4">Log Out</a>
+=======
+              blue-grey-text text-darken-4 " ng-click="logOutButton()">Log Out</a>
+>>>>>>> 5d17a0f075761fc29c94b68137b6ed63cda4449b
      <!-- logo -->
               <a href="#" class="brand-logo center">
               <img src="/styles/img/somewhatPinterested.png" class="logo-img"></a>
@@ -37,8 +41,6 @@
                 <a href="#/yourBoards" class="blue-grey-text text-darken-4">Your Boards</a>
               </li>
             </ul>
-
-
 
 
 <!-- Search bar -->
@@ -73,15 +75,10 @@
 <div class="wrapper">
 
 
-
-
 <!-- Angular -->
     <div ng-app="pinterestApp" class="materialboxed"> <!-- angular ng-app (initate) -->
     <div> <!-- angular ng-app (initate) -->  <!-- Line 91 stuffs ng-app="pinterestApp" -->
       <div ng-view> <!-- angular ng-view -->
-
-
-
 
 
       </div> <!-- end angular ng-view -->
@@ -93,7 +90,11 @@
 
 
 <!-- footer -->
+<<<<<<< HEAD
         <footer class="page-footer  grey lighten-3">
+=======
+        <footer class="page-footer grey lighten-3">
+>>>>>>> 5d17a0f075761fc29c94b68137b6ed63cda4449b
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -112,12 +113,18 @@
             </div>
           </div>
           <div class="footer-copyright">
+<<<<<<< HEAD
             <div class="container">
             © 2017 Copyright SomeWhat Pinterested
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             <div class="container grey-text text-darken-3">
             © 2017 Copyright SomeWhat Pinterest, but also maybe not.
             <a class="grey-text text-darken-4 right" href="#!">More Links</a>
+=======
+            <div class="container grey-text text-darken-3">
+             © 2017 Copyright SomeWhat Pinterest, but also maybe not.
+             <a class="grey-text text-darken-4 right" href="#!">More Links</a>
+>>>>>>> 5d17a0f075761fc29c94b68137b6ed63cda4449b
             </div>
           </div>
         </footer>
@@ -125,16 +132,20 @@
 <!-- footer end -->
 
 
-
-
-
 <!-- _____________________________________ -->
+  <script src="/lib/firebase/firebase.js"></script>
   <!-- Dependency scripts -->
   <script src="/lib/jquery/dist/jquery.min.js"></script>
   <script src="/lib/angular/angular.min.js"></script>
   <script src="/lib/angular-route/angular-route.min.js"></script>
+<<<<<<< HEAD
   <script src="/lib/materialize/dist/js/materialize.min.js"></script>
   <script src="/lib/masonry/dist/masonry.pkgd.js"></script>
+=======
+
+  <script src="/lib/masonry/dist/masonry.pkgd.js"></script>
+
+>>>>>>> 5d17a0f075761fc29c94b68137b6ed63cda4449b
   <!-- Main app script -->
   <script src="/js/app.js"></script>
   <!-- Materialize Functionality -->
@@ -142,6 +153,7 @@
 
   <!-- Factory scripts -->
   <script src="js/factories/boardFactory.js"></script>
+  <script src="js/factories/AuthFactory.js"></script>
   <script src="js/factories/pinFactory.js"></script>
   <!-- Controller Scripts -->
   <script src="/js/controllers/BoardViewCtrl.js"></script>
@@ -150,11 +162,11 @@
   <script src="/js/controllers/singleUserPinsCtrl.js"></script>
   <script src="/js/controllers/createPinCtrl.js"></script>
   <script src="/js/controllers/LoginCtrl.js"></script>
-
+  <script src="/js/controllers/registerCtrl.js"></script>
+  <script src="/js/controllers/navigationCtrl.js"></script>
 
 
 
 
 </body>
-
 </html>
