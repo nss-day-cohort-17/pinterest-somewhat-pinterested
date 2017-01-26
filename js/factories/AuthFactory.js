@@ -9,6 +9,10 @@
        return $q.resolve(firebase.auth().signInWithEmailAndPassword(email, pass));
      },
 
+     logOut () {
+      return $q.resolve(firebase.auth().signOut())
+     }
+
      getUserId () {
        return firebase.auth().currentUser.uid;
        console.log(currentUser.uid);
