@@ -22,7 +22,7 @@ app.config(function($routeProvider, $locationProvider){
         const authReady = firebase.auth().onAuthStateChanged(user => {
           authReady()
           if (!user) {
-            $location.url('/')
+            $location.url('/login')
           }
         })
       }
