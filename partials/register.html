@@ -1,17 +1,25 @@
   <h3>Somewhat Pinterested? Please register!</h3>
   <div class="row">
-    <form class="col s12">
+    <form class="col s12" ng-submit="registerButton()">
       <div class="row">
         <i class="medium material-icons">perm_identity</i>
         <div class="input-field col s4">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">Username</label>
+          <input id="email" type="text" class="validate" ng-model="email">
+          <label for="email">Email</label>
         </div>
       </div>
       <div class="row">
         <i class="medium material-icons">vpn_key</i>
         <div class="input-field col s4">
-          <input id="password" type="password" class="validate">
+          <input id="password" type="password" class="validate" ng-model="password">
           <label for="password">Password</label>
         </div>
       </div>
+      <!-- Submit button -->
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="submitButton" type="submit" value="Register" class="btn">
+        </div>
+      </div>
+    </form>
+  </div>

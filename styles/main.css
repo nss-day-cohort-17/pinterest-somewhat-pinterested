@@ -28,7 +28,16 @@ body {
 
 img, .card, .card-action {
 	border-radius: 10px;
+	width: 350px;
 }
+
+/*.card {
+
+	display: flex;
+	flex-flow: row-wrap;
+	align-content: space-between;
+
+}*/
 
 .logo-img {
 	height: 60px;
@@ -66,8 +75,8 @@ LOGIN PAGE
 
 
 
+* { box-sizing: border-box; }
 
-/** { box-sizing: border-box; }*/
 
 /* ---- grid ---- */
 

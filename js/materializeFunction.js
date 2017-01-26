@@ -1,6 +1,6 @@
-console.log("i materialize!")
+console.log("I materialize!")
 
-$( document ).ready(function() {
+$(document).ready(function() {
 
 	console.log("materialize ready")
 	$(".dropdown-button").dropdown();
@@ -8,4 +8,7 @@ $( document ).ready(function() {
  	$('select').material_select();
 
  	$('.materialboxed').materialbox();
+
+  $('.tooltipped').tooltip({delay: 50});
 });
+
