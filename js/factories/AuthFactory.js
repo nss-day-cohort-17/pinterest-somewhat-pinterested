@@ -16,7 +16,7 @@
 
      getUserId () {
        return firebase.auth().currentUser.uid;
-       console.log(currentUser.uid);
+       console.log("auth current user id", firebase.auth().currentUser.uid);
      },
 
      register (email, pass) {

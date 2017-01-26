@@ -11,10 +11,10 @@ app.factory('PinFactory', function($http){
               })
             },
 
-            createNewPin: function(uid, boardid, url, title){
+            createNewPin: function(boardid, url, title){
 
               let newPin = {
-                "uid": uid,
+                "uid": AuthFactory.getUserId(),
                 "boardid": boardid,
                 "url": url,
                 "title": title

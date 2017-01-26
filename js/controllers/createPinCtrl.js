@@ -2,7 +2,7 @@ app.controller('CreatePinCtrl', function($scope, PinFactory, BoardFactory){
     console.log('CreatePinCtrl loaded.')
 
   // Testing variables
-  $scope.uid = "12345"
+  $scope.uid = AuthFactory.getUserId()
   $scope.boardid = "K66hzzzyyyy"
 
 
