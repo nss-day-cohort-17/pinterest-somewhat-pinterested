@@ -14,7 +14,6 @@ app.config(function($routeProvider, $locationProvider){
       storageBucket: "somewhat-pinterested.appspot.com",
       messagingSenderId: "568015842356"
     });
-    // firebase.initializeApp(config);
 
     const checkForAuth = {
       checkForAuth ($location) {
@@ -27,7 +26,6 @@ app.config(function($routeProvider, $locationProvider){
         })
       }
     }
-
 
     $routeProvider
     .when('/', {
