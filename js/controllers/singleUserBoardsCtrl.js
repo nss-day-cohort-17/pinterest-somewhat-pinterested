@@ -1,10 +1,10 @@
-app.controller('SingleUserBoardsCtrl', function($scope, $location, BoardFactory){
+app.controller('SingleUserBoardsCtrl', function($scope, $location, BoardFactory, AuthFactory){
 
-  $scope.uid = "54321"
+  $scope.uid = AuthFactory.getUserId()
 
   BoardFactory.getUserBoardList($scope.uid)
   .then(function(val){
-            console.log("All user board list?", val);
+            console.log("Specific user board list?", val);
 
             $scope.specificUserBoardList = val;
         });

@@ -9,7 +9,6 @@ app.factory('BoardFactory', function($http, AuthFactory){
             })
           },
 
-
           createNewBoard: function(uid, title){
 
               let newBoard = {
