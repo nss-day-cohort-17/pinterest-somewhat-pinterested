@@ -20,8 +20,8 @@
               btn
               right inline
               brown lighten-4
-              blue-grey-text text-darken-4 " ng-click="logOutButton()">Log Out</a>
-     <!-- logo -->
+              blue-grey-text text-darken-4" " ng-click="logOutButton()">Log Out</a>
+                   <!-- logo -->
               <a href="#" class="brand-logo center">
               <img src="/styles/img/somewhatPinterested.png" class="logo-img"></a>
 
@@ -36,19 +36,7 @@
               <li>
                 <a href="#/yourBoards" class="blue-grey-text text-darken-4">Your Boards</a>
               </li>
-
-             <!-- Dropdown Trigger -->
-               <!--  <li>
-                  <a class="dropdown-button" href="#!" data-activates="dropdown1">
-                    <i class="material-icons right">Users Boards
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect waves-light btn">Log Out
-                  </a>
-                </li> -->
-             </ul>
+            </ul>
 
 
 <!-- Search bar -->
@@ -84,7 +72,8 @@
 
 
 <!-- Angular -->
-    <div> <!-- angular ng-app (initate) -->  <!-- Line 91 stuffs ng-app="pinterestApp" -->
+    <div ng-app="pinterestApp" class="materialboxed"> <!-- angular ng-app (initate) -->
+<!--     <div> --> <!-- angular ng-app (initate) -->  <!-- Line 91 stuffs ng-app="pinterestApp" -->
       <div ng-view> <!-- angular ng-view -->
 
 
@@ -97,6 +86,9 @@
 
 
 <!-- footer -->
+
+        <footer class="page-footer  grey lighten-3">
+
         <footer class="page-footer grey lighten-3">
           <div class="container">
             <div class="row">
@@ -107,8 +99,8 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="grey-text text-darken-3">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-darken-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-darken-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-darken-3" href="#!">Your Pins</a></li>
+                  <li><a class="grey-text text-darken-3" href="#!">Your Boards</a></li>
                   <li><a class="grey-text text-darken-3" href="#!">Link 3</a></li>
                   <li><a class="grey-text text-darken-3" href="#!">Link 4</a></li>
                 </ul>
@@ -116,12 +108,19 @@
             </div>
           </div>
           <div class="footer-copyright">
+            <div class="grey-text container">
+            © 2017 Copyright SomeWhat Pinterested
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <div class="container grey-text text-darken-3">
+            © 2017 Copyright SomeWhat Pinterest, but also maybe not.
+            <a class="grey-text text-darken-4 right" href="#!">More Links</a>
             <div class="container grey-text text-darken-3">
              © 2017 Copyright SomeWhat Pinterest, but also maybe not.
              <a class="grey-text text-darken-4 right" href="#!">More Links</a>
             </div>
           </div>
         </footer>
+
 <!-- footer end -->
 
 
@@ -129,12 +128,10 @@
   <script src="/lib/firebase/firebase.js"></script>
   <!-- Dependency scripts -->
   <script src="/lib/jquery/dist/jquery.min.js"></script>
-  <script src="/lib/materialize/dist/js/materialize.min.js"></script>
   <script src="/lib/angular/angular.min.js"></script>
   <script src="/lib/angular-route/angular-route.min.js"></script>
-
+  <script src="/lib/materialize/dist/js/materialize.min.js"></script>
   <script src="/lib/masonry/dist/masonry.pkgd.js"></script>
-
   <!-- Main app script -->
   <script src="/js/app.js"></script>
   <!-- Materialize Functionality -->
@@ -144,6 +141,7 @@
   <script src="js/factories/AuthFactory.js"></script>
   <script src="js/factories/pinFactory.js"></script>
   <!-- Controller Scripts -->
+  <script src="/js/controllers/BoardViewCtrl.js"></script>
   <script src="/js/controllers/mainCtrl.js"></script>
   <script src="/js/controllers/singleUserBoardsCtrl.js"></script>
   <script src="/js/controllers/singleUserPinsCtrl.js"></script>
@@ -152,6 +150,8 @@
   <script src="/js/controllers/LoginCtrl.js"></script>
   <script src="/js/controllers/registerCtrl.js"></script>
   <script src="/js/controllers/navigationCtrl.js"></script>
+
+
 
 
 </body>
