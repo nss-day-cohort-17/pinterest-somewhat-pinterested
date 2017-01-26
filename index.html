@@ -13,14 +13,14 @@
 
 
 <!-- Navigation -->
-      <div class="navbar-fixed">
+      <div class="navbar-fixed" ng-controller="NavCtrl">
           <nav class="navigation">
      <!-- log out -->
               <a class="logout-button
               btn
               right inline
               brown lighten-4
-              blue-grey-text text-darken-4 ">Log Out</a>
+              blue-grey-text text-darken-4 " ng-click="logOutButton()">Log Out</a>
      <!-- logo -->
               <a href="#" class="brand-logo center">
               <img src="/styles/img/somewhatPinterested.png" class="logo-img"></a>
@@ -149,6 +149,9 @@
   <script src="/js/controllers/singleUserPinsCtrl.js"></script>
   <script src="/js/controllers/createPinCtrl.js"></script>
   <script src="/js/controllers/LoginCtrl.js"></script>
+  <script src="/js/controllers/registerCtrl.js"></script>
+  <script src="/js/controllers/navigationCtrl.js"></script>
+
 
 </body>
 </html>
