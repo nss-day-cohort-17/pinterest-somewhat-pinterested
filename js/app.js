@@ -68,8 +68,8 @@ app.config(function($routeProvider, $locationProvider){
         resolve: checkForAuth
     })
     .when('/createBoard', {
-        controller: 'test',
-        templateUrl: 'partials/createboard.html',
+        controller: 'CreateBoardCtrl',
+        templateUrl: 'partials/createBoard.html',
         resolve: checkForAuth
     })
     .otherwise({

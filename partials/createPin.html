@@ -23,13 +23,11 @@
 
     <div class="row">
       <div class="input-field col s5">
-        <h5>Add Pin to a Board?</h4>
-        <select class="browser-default">
-          <option value="0">No Thanks!</option>
+        <h5>Choose a Board to add the pin to</h4>
+
+        <select class="browser-default" ng-model="boardid">
           <!-- add ng repeat for other options? -->
-          <option value="1">Board test</option>
-          <option value="2">Board test</option>
-          <option value="3">Board test</option>
+          <option ng-repeat="(key, value) in userBoardList" value="{{key}}">{{value.title}}</option>
         </select>
       </div>
     </div>
