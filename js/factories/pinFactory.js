@@ -1,4 +1,4 @@
-app.factory('PinFactory', function($http){
+app.factory('PinFactory', function($http, AuthFactory){
 
   return {
             getSpecificUserPinsList: function(uid){
@@ -11,7 +11,7 @@ app.factory('PinFactory', function($http){
               })
             },
 
-            createNewPin: function(boardid, url, title){
+            createNewPin: function(uid, boardid, url, title){
 
               let newPin = {
                 "uid": AuthFactory.getUserId(),
