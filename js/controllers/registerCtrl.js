@@ -1,6 +1,10 @@
 app.controller("RegisterCtrl", function($scope, $location, AuthFactory){
-  $scope.login = () =>  AuthFactory
-  .login($scope.email, $scope.password)
-    .then(() => location.url("/"));
 
-  });
+  $scope.registerButton = function () {
+    AuthFactory.register($scope.email, $scope.password)
+      .then(function(){
+        AuthFactory.putNewUserInFirebase()
+      })
+  }
+
+});

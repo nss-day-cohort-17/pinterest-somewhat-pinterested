@@ -1,7 +1,7 @@
 
 "esversion: 6";
 
- app.factory('AuthFactory', ($q) => {
+ app.factory('AuthFactory', ($q, $http) => {
    return {
 
      login (email, pass) {

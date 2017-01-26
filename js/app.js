@@ -60,7 +60,7 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl: 'partials/userBoards.html',
         resolve: checkForAuth
     })
-    .when('/yourBoards:someBoard', {
+    .when('/yourBoards/:someBoard', {
         controller: 'test',
         templateUrl: 'test/login.html'
     })
