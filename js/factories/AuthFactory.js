@@ -10,8 +10,9 @@
      },
 
      logOut () {
+      console.log("AuthFactory logOut function called")
       return $q.resolve(firebase.auth().signOut())
-     }
+     },
 
      getUserId () {
        return firebase.auth().currentUser.uid;
@@ -23,6 +24,7 @@
      },
 
       // get user key name and post it to   users.json
+      // redo and use AuthFactory.getUserId() ????
      putNewUserInFirebase () {
       var userId = firebase.auth().currentUser.uid
       var userEmail = firebase.auth().currentUser.email
