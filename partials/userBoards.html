@@ -1,5 +1,8 @@
 <h1>Individual User Pin</h1>
 
+
+<div class="wrapper">
+
 <li>Have a create pin button like in pinterest</li>
 <li>List users pins</li>
 <div class="row">
@@ -31,18 +34,28 @@
           </div> -->
       </div>
 
-    </div>
-  </div>
+          </div> <!-- end card -->
+        </div> <!-- end column -->
+      </div> <!-- end row -->
 
-  <!-- Grab all pins owned by the current user and display them -->
-  <div ng-repeat="pin in specificUserPinList" class="col s12 m3">
-    <div class="card">
-      <!-- Show picture here -->
-      <div>
-        <img class="responsive-img materialboxed center" src="{{pin.url}}">
+
+      <div ng-repeat="(key, value) in specificUserBoardList" class="{{key}} col s12 m3">
+        {{key}} {{value}}
+        <div class="card blue-grey lighten-1">
+
+          <div class="card-content white-text">
+            <span class="card-title">{{board.title}}</span>
+            <p>We should make this look purty somehow</p>
+          </div>
+
+          <div class="card-action">
+            <a href="javascript:;" ng-click="deleteBoardButton()">Delete Board</a>
+            <a>stuffs</a>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
-  </div>
-
 </div>
