@@ -10,7 +10,7 @@
             <i class="medium material-icons">list</i>
           </a>
           <ul>
-            <li><a class="btn-floating purple lighten-2" style="position: relative; display: inline-block; bottom: 15px;"><i class="material-icons">nature</i></a></li>
+            <li><a href="#/createPin" class="btn-floating purple lighten-2" style="position: relative; display: inline-block; bottom: 15px;"><i class="material-icons">nature</i></a></li>
             <li><a class="btn-floating pink lighten-2" style="display: inline-block; bottom: 15px;"><i class="material-icons">thumb_up</i></a></li>
             <li><a class="btn-floating teal accent-2" style="display: : inline-block; bottom: 15px;"><i class="material-icons">comment</i></a></li>
             <li><a class="btn-floating red" style="display: inline-block; bottom: 15px;"><i class="material-icons">delete</i></a></li>
@@ -27,7 +27,7 @@
   </div>
 
   <!-- Grab all pins owned by the current user and display them -->
-  <div ng-repeat="pin in specificUserPinList" class="col s12 m3">
+  <div ng-repeat="(key, value) in specificUserPinList" class="{{key}} col s12 m3">
     <div class="card">
       <!-- Show picture here -->
       <div class="fixed-action-btn horizontal" style="position: absolute; display: inline-block; bottom: 8px;">
@@ -41,7 +41,7 @@
             <li><a class="btn-floating red" style="display: inline-block; bottom: 15px;"><i class="material-icons">delete</i></a></li>
           </ul>
         </div>
-        <img class="responsive-img" src="{{pin.url}}">
+        <img class="responsive-img" src="{{value.url}}">
       </div>
 
     </div>
