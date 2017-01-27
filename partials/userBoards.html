@@ -43,18 +43,19 @@
       <div class="card blue-grey lighten-1"> <!-- ng-repeat card div -->
 
             <div class="card-content white-text"> <!-- begin ng-repeat card content -->
-              <span class="card-title">{{board.title}}</span>
+              <span class="card-title">{{value.title}}</span>
 
               <div class="four-pins-for-board-diplay">
-                    <img src="http://www.pngall.com/wp-content/uploads/2016/06/Unamused-Face-Emoji-PNG.png" class="four-pins-for-for-board-image"><div class="four-pins-for-board-diplay">
-                    <img src="http://www.pngall.com/wp-content/uploads/2016/06/Loudly-Crying-Emoji-PNG.png" class="four-pins-for-for-board-image">
+                    <!-- {{firstFourPins.url}} -->
+                    <img ng-repeat="image in firstFourPins" src="{{image.url}}">
+                  <!--   <img src="http://www.pngall.com/wp-content/uploads/2016/06/Loudly-Crying-Emoji-PNG.png" class="four-pins-for-for-board-image">
                     <img src="https://s-media-cache-ak0.pinimg.com/564x/ee/17/e1/ee17e16c7a166cd5c1b221c07ff84ebf.jpg" class="four-pins-for-for-board-image">
-                    <img src="https://s-media-cache-ak0.pinimg.com/564x/f7/a4/bd/f7a4bd3aca721ca3d84ac8218fd1f697.jpg" class="four-pins-for-for-board-image">
+                    <img src="https://s-media-cache-ak0.pinimg.com/564x/f7/a4/bd/f7a4bd3aca721ca3d84ac8218fd1f697.jpg" class="four-pins-for-for-board-image"> -->
               </div>
 
             <div class="card-action"> <!-- ng-repeat card-action -->
               <a href="javascript:;" ng-click="deleteBoardButton()">Delete Board</a>
-              <a>stuffs</a>
+              <a>What is this</a>
             </div> <!-- end ng-repeat card-action -->
 
           </div> <!-- end ng-repeat card content -->
