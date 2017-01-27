@@ -26,18 +26,20 @@ app.controller('SingleUserBoardsCtrl', function($scope, $location, BoardFactory,
 
     // get cards unique identifier key
 
-    $scope.getElement = event.target.parentElement.parentElement.parentElement
+    $scope.getElement = event.target.parentElement.parentElement.parentElement.parentElement
+
+    console.log("get element", $scope.getElement)
     $scope.deleteThisKey = $scope.getElement.classList[0]
 
-    console.log($scope.deleteThisKey)
+    console.log("delete this key", $scope.deleteThisKey)
 
     BoardFactory.deleteSpecificUserBoard($scope.deleteThisKey)
 
     // Figure out a way to just the view
-    setTimeout(()=>{location.reload()}, 1000)
+    // setTimeout(()=>{location.reload()}, 1000)
 
     // made this will just reload the view
-    $location.url(`/yourBoards/`)
+    // $location.url(`/yourBoards/`)
   }
 
 });
