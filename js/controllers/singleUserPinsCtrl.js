@@ -1,7 +1,9 @@
 app.controller('SingleUserPinsCtrl', function($scope, PinFactory){
     console.log('MainCtrl loaded.  Show all pins from all users')
 
-    $scope.uid = "37211"
+    $scope.uid = firebase.auth().currentUser.uid
+
+    // firebase.auth().onAuthStateChanged()
 
     PinFactory.getSpecificUserPinsList($scope.uid)
         .then(function(val){

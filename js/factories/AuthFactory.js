@@ -1,5 +1,6 @@
 
 "esversion: 6";
+console.log('auth factory loaded')
 
  app.factory('AuthFactory', ($q, $http) => {
    return {
@@ -15,8 +16,8 @@
      },
 
      getUserId () {
-       return firebase.auth().currentUser.uid;
-       console.log(currentUser.uid);
+       return firebase.auth().currentUser.uid
+       console.log("auth current user id", firebase.auth().currentUser.uid);
      },
 
      register (email, pass) {

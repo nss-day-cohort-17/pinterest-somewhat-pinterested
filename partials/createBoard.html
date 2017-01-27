@@ -1,1 +1,22 @@
-<h1>create new board partial</h1>
+<h3>Lets Make a New Board</h3>
+
+<div class="row">
+
+  <form class="col s12" ng-submit="makeBoardButton()">
+    <div class="row">
+      <h5>Give the Board a Title</h5>
+      <i class="medium material-icons">perm_identity</i>
+      <div class="input-field col s4">
+        <input id="title" type="text" class="validate" ng-model="title">
+        <label for="title">Title</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s5">
+        <input class="btn waves-effect waves-light" type="submit" value="Make Board!">
+      </div>
+    </div>
+
+  </form>
+</div>

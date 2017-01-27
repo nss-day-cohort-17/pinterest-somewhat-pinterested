@@ -1,13 +1,22 @@
-app.controller('SingleUserBoardsCtrl', function($scope, $location, BoardFactory){
+app.controller('SingleUserBoardsCtrl', function($scope, $location, BoardFactory, AuthFactory, PinFactory){
 
-  $scope.uid = "54321"
+  $scope.uid = AuthFactory.getUserId()
 
+  // Get users list of boards which will be displayed
   BoardFactory.getUserBoardList($scope.uid)
   .then(function(val){
-            console.log("All user board list?", val);
+            console.log("Specific user board list?", val);
 
             $scope.specificUserBoardList = val;
         });
+
+  PinFactory.getUserPinsImagesForBoards(firebase.auth().currentUser.uid)
+    .then(function(firstFourPinsList){
+      console.log("first four pins", firstFourPinsList)
+
+      $scope.firstFourPins = firstFourPinsList
+    })
+
 
 
   $scope.deleteBoardButton = function ($event) {

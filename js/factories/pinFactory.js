@@ -1,4 +1,4 @@
-app.factory('PinFactory', function($http){
+app.factory('PinFactory', function($http, AuthFactory){
 
  return {
            getSpecificUserPinsList: function(uid){
@@ -30,6 +30,18 @@ app.factory('PinFactory', function($http){
                  console.log("val", val)
                  return val.data
              })
+         },
+
+         getUserPinsImagesForBoards: function(uid){
+
+            return $http.get(`https://somewhat-pinterested.firebaseio.com/pins.json?orderBy="uid"&equalTo="${uid}"&limitToFirst=4`)
+               .then(function(val){
+                 console.log("getUserPinsListForBoards", val)
+                 return val.data
+             })
          }
+
+
+
        }
 })
