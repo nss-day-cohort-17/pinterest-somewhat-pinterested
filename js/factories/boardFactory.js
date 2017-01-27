@@ -6,11 +6,12 @@ app.factory('BoardFactory', function($http, AuthFactory){
              .then(function(val){
                console.log("val", val)
                return val.data
-           })
+
+          })
          },
 
-         createNewBoard: function(uid, boardid, url, title){
-           
+         createNewBoard: function(uid, title){
+
              let newBoard = {
                "uid": uid,
                "title": title

@@ -30,6 +30,18 @@ app.factory('PinFactory', function($http, AuthFactory){
                  console.log("val", val)
                  return val.data
              })
+         },
+
+         getUserPinsImagesForBoards: function(uid){
+
+            return $http.get(`https://somewhat-pinterested.firebaseio.com/pins.json?orderBy="uid"&equalTo="${uid}"&limitToFirst=4`)
+               .then(function(val){
+                 console.log("getUserPinsListForBoards", val)
+                 return val.data
+             })
          }
+
+
+
        }
 })
