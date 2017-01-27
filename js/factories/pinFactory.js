@@ -39,7 +39,13 @@ app.factory('PinFactory', function($http, AuthFactory){
                  console.log("getUserPinsListForBoards", val)
                  return val.data
              })
-         }
+         },
+
+         deleteSpecificUserPin: function(pinName){
+            console.log("delete board function")
+            console.log("delete url", `https://somewhat-pinterested.firebaseio.com/boards/${pinName}.json`)
+            $http.delete(`https://somewhat-pinterested.firebaseio.com/pins/${pinName}.json`)
+          }
 
 
 

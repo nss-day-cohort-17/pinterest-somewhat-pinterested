@@ -9,13 +9,13 @@
     <div class="card blue-grey darken-1">
       <div class="fixed-action-btn horizontal" style="position: absolute; display: inline-block; bottom: 8px;">
           <a class="btn-floating btn-medium orange lighten-1" class="col s4">
-            <i class="medium material-icons tooltipped">list</i>
+            <i class="medium material-icons">list</i>
           </a>
           <ul>
             <li><a href="#/createPin" class="btn-floating purple lighten-2" style="position: relative; display: inline-block; bottom: 15px;"><i class="material-icons">nature</i></a></li>
             <li><a class="btn-floating pink lighten-2" style="display: inline-block; bottom: 15px;"><i class="material-icons">thumb_up</i></a></li>
             <li><a class="btn-floating teal accent-2" style="display: : inline-block; bottom: 15px;"><i class="material-icons">comment</i></a></li>
-            <li><a class="btn-floating red" style="display: : inline-block; bottom: 15px;"><i class="material-icons">delete</i></a></li>
+            <li><a class="btn-floating red" style="display: inline-block; bottom: 15px;"><i class="material-icons">delete</i></a></li>
           </ul>
         </div>
 
@@ -23,24 +23,19 @@
 
       <div class="card-content white-text">
         <span class="card-title">New Pin</span>
-      <div>
+
+        <div class="card-action">
+
+        </div>
+
       </div>
-
-      <div class="card-action">
-
-        <!-- <a href="#/createPin">Make a New Pin</a> -->
-          <!-- Icons and tooltips for pinned cards -->
-         <!--  <div>
-            <a><i class="medium material-icons" class="tooltipped" data-position="right" data-delay="50" data-tooltip="I am in right!">delete</i></a>
-          </div> -->
-      </div>
-
-    </div>
   </div>
 
 
   <!-- Grab all pins owned by the current user and display them -->
-  <div ng-repeat="pin in specificUserPinList" class="col">
+
+  <div ng-repeat="(key, value) in specificUserPinList" class="{{key}} col">
+
     <div class="card">
       <!-- Show picture here -->
       <div class="fixed-action-btn horizontal" style="position: absolute; display: inline-block; bottom: 8px;">
@@ -48,13 +43,16 @@
             <i class="medium material-icons">list</i>
           </a>
           <ul>
-            <li><a class="btn-floating purple lighten-2" style="position: relative; display: inline-block; bottom: 15px;"><i class="material-icons">nature</i></a></li>
+            <li><a class="btn-floating purple lighten-2" style="display: inline-block; bottom: 15px;"><i class="material-icons">nature</i></a></li>
             <li><a class="btn-floating pink lighten-2" style="display: inline-block; bottom: 15px;"><i class="material-icons">thumb_up</i></a></li>
-            <li><a class="btn-floating teal accent-2" style="display: : inline-block; bottom: 15px;"><i class="material-icons">comment</i></a></li>
-            <li><a class="btn-floating red" style="display: : inline-block; bottom: 15px;"><i class="material-icons">delete</i></a></li>
+            <li><a class="btn-floating teal accent-2" style="display: inline-block; bottom: 15px;"><i class="material-icons">comment</i></a></li>
+            <li><a class="btn-floating red" style="display: inline-block; bottom: 15px;"><i class="material-icons">delete</i></a></li>
           </ul>
         </div>
-        <img class="materialboxed" width="650" src="{{pin.url}}">
+
+        <img class="materialboxed" width="650" src="{{value.url}}">
+
+
       </div>
 
     </div>
