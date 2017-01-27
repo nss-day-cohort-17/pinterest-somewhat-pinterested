@@ -83,17 +83,20 @@ LOGIN PAGE
 .dynamic-wrapper {
 	margin-left: 12%;
 
+}.dynamic-wrapper-2 {
+	margin-left: 9%;
+
 }
 
-.four-pins-for-board-display {
-
-}
 
 .four-pins-for-for-board-image {
 	height: 80px;
 	width: 80px;
 	display: inline-flex;
 	margin: 2%;
+}
 
-
+.boardImages {
+	width: 100px;
+	height:100px;
 }

@@ -59,7 +59,7 @@
 
   <div class="row"> <!-- begin row div -->
 
-    <div class="col"> <!-- begin col div -->
+    <div class="col dynamic-wrapper-2"> <!-- begin col div -->
 
 
       <div class="card blue-grey darken-1">
@@ -89,7 +89,7 @@
 
         </div> <!-- end card-content -->
       </div> <!-- end card -->
-    </div> <!-- end column -->
+
 
 
     <div ng-repeat="(key, value) in specificUserBoardList" class="{{key}} col"> <!-- ng-repeat div -->
@@ -101,7 +101,7 @@
 
               <div class="four-pins-for-board-diplay">
                     <!-- {{firstFourPins.url}} -->
-                    <img ng-repeat="image in firstFourPins" src="{{image.url}}">
+                    <img ng-repeat="image in firstFourPins" src="{{image.url}}" class="boardImages">
                   <!--   <img src="http://www.pngall.com/wp-content/uploads/2016/06/Loudly-Crying-Emoji-PNG.png" class="four-pins-for-for-board-image">
                     <img src="https://s-media-cache-ak0.pinimg.com/564x/ee/17/e1/ee17e16c7a166cd5c1b221c07ff84ebf.jpg" class="four-pins-for-for-board-image">
                     <img src="https://s-media-cache-ak0.pinimg.com/564x/f7/a4/bd/f7a4bd3aca721ca3d84ac8218fd1f697.jpg" class="four-pins-for-for-board-image"> -->
@@ -118,6 +118,7 @@
 
 
       </div> <!-- end ng-repeat div -->
+          </div> <!-- end column -->
   </div> <!-- end row div -->
 </div> <!-- end wrapper div -->
 >>>>>>> d300b0a5a9bd6d0466546795e72ecf0ea5c875d2
