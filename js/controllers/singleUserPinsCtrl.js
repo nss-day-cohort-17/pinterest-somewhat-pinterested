@@ -11,4 +11,13 @@ app.controller('SingleUserPinsCtrl', function($scope, PinFactory){
 
             $scope.specificUserPinList = val
         })
+
+
+    $scope.deletePinButton = function($event){
+      console.log("delete button clicked")
+
+      // $scope.getElement = event.target.parentElement.parentElement.parentElement
+      // $scope.getElement = $($event.target)//.closest('div')
+      console.log($scope.getElement)
+    }
 })
